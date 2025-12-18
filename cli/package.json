@@ -1,15 +1,39 @@
 {
-  "name": "groot-vcs-cli",
+  "name": "groot-version",
   "version": "1.0.0",
-  "description": "A simple version control CLI",
+  "description": "A simple version control system CLI tool",
   "type": "module",
   "main": "index.js",
   "bin": {
     "groot": "./index.js"
   },
-   
-
-
+  "files": [
+    "index.js",
+    "src/**/*.js"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "echo \"Skipping tests for now\""
+  },
+  "keywords": [
+    "version-control",
+    "cli",
+    "vcs",
+    "git-alternative"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/groot-vcs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/groot-vcs/issues"
+  },
+  "homepage": "https://github.com/yourusername/groot-vcs#readme",
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
@@ -17,11 +41,9 @@
     "mime-types": "^3.0.1",
     "node-fetch": "^3.3.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
- 
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
 }
